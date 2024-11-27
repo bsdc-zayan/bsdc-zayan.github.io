@@ -25,30 +25,12 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Unique Styling for the ZK Wash & Detailing header */
 header h1 {
-    font-family: 'Poppins', sans-serif; /* Unique font family for header */
-    font-size: 5rem; /* Larger size for more impact */
+    font-size: 3.5rem;
     text-align: center;
     margin: 0;
     font-weight: bold;
     color: #333333; /* Black text for header */
-    text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 5px; /* Add space between letters for a modern look */
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
-    line-height: 1.2; /* Adjust line height for better spacing */
-    position: relative;
-    animation: rotatePortrait 3s forwards; /* Apply 3D rotation animation once */
-}
-
-/* 3D rotation animation for portrait rotation */
-@keyframes rotatePortrait {
-    0% {
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100% {
-        transform: perspective(1000px) rotateY(360deg);
-    }
 }
 
 /* Navigation */
@@ -70,22 +52,71 @@ nav ul li a {
     padding: 12px 20px;
     text-transform: none; /* Remove uppercase */
     transition: all 0.3s ease;
-    border: 2px solid transparent; /* Default border */
-    border-radius: 5px; /* Round corners */
 }
 
-/* Hover and Active States for Navigation */
-nav ul li a:hover {
-    color: #BEE3F8; /* Baby blue hover effect */
-    background-color: #333333; /* Dark background on hover */
-    border-color: #BEE3F8; /* Baby blue border on hover */
-}
-
-/* Active State - Retain Black Text */
+nav ul li a:hover,
 nav ul li a.active {
-    color: #333333; /* Keep black text */
-    background-color: #A6D8FF; /* Light blue background */
-    border-color: #A6D8FF; /* Light blue border for active button */
+    color: #BEE3F8; /* Baby blue hover effect */
+    border-bottom: 3px solid #BEE3F8; /* Baby blue border under active link */
+}
+
+/* Location Page Styles */
+#location {
+    background-color: #FFF;
+    padding: 50px 20px;
+}
+
+#location h2 {
+    font-size: 2.5rem;
+    color: #A6D8FF; /* Light Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#location .location-details {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#location .location-details h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#location .location-details p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.map-container {
+    text-align: center;
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Mobile responsiveness for map */
+@media screen and (max-width: 768px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #BEE3F8; /* Baby Blue */
+    color: #333333;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Hero Section */
@@ -274,46 +305,38 @@ form {
 form input,
 form textarea {
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #A6D8FF; /* Light blue border */
-    border-radius: 8px;
-    font-size: 1.1rem;
-    color: #333333;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333333; /* Black text */
 }
 
-form input[type="submit"] {
-    background-color: #A6D8FF; /* Light blue button */
-    color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border-radius: 25px;
+form button {
+    background-color: #A6D8FF; /* Light blue */
+    color: #333333; /* Black text */
     padding: 12px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-form input[type="submit"]:hover {
+form button:hover {
     background-color: #B8E2F4; /* Lighter blue on hover */
 }
 
-.contact-button {
-    display: inline-block; /* Ensure it's displayed properly */
-    background-color: #007BFF; /* Blue background */
-    color: #fff; /* White text */
-    padding: 12px 25px; /* Padding to make the button bigger */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1.1rem; /* Font size */
-    font-weight: bold; /* Make the text bold */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove any default underline */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #BEE3F8; /* Baby Blue */
+    color: #333333;
+    font-size: 1rem;
 }
 
-.contact-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight upward movement on hover */
+footer p {
+    margin: 0;
 }
-
