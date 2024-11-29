@@ -2,8 +2,8 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #F1F1F1; /* Smoke White background */
-    color: #333333; /* Black text */
+    background-color: #F1F1F1;
+    color: #333333;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -19,36 +19,25 @@ body {
 
 /* Header Section */
 header {
-    background-color: #BEE3F8; /* Baby Blue */
-    color: #333333; /* Black text */
+    background-color: #BEE3F8;
+    color: #333333;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Unique Styling for the ZK Wash & Detailing header */
 header h1 {
-    font-family: 'Poppins', sans-serif; /* Unique font family for header */
-    font-size: 5rem; /* Larger size for more impact */
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
     text-align: center;
     margin: 0;
     font-weight: bold;
-    color: #333333; /* Black text for header */
-    text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 5px; /* Add space between letters for a modern look */
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
-    line-height: 1.2; /* Adjust line height for better spacing */
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
     position: relative;
-    animation: rotatePortrait 3s forwards; /* Apply 3D rotation animation once */
-}
-
-/* 3D rotation animation for portrait rotation */
-@keyframes rotatePortrait {
-    0% {
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100% {
-        transform: perspective(1000px) rotateY(360deg);
-    }
+    animation: rotatePortrait 3s forwards;
 }
 
 /* Navigation */
@@ -64,34 +53,32 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333333; /* Black text for nav links */
+    color: #333333;
     font-size: 1.2rem;
     text-decoration: none;
     padding: 12px 20px;
-    text-transform: none; /* Remove uppercase */
+    text-transform: none;
     transition: all 0.3s ease;
-    border: 2px solid transparent; /* Default border */
-    border-radius: 5px; /* Round corners */
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
-/* Hover and Active States for Navigation */
 nav ul li a:hover {
-    color: #BEE3F8; /* Baby blue hover effect */
-    background-color: #333333; /* Dark background on hover */
-    border-color: #BEE3F8; /* Baby blue border on hover */
+    color: #BEE3F8;
+    background-color: #333333;
+    border-color: #BEE3F8;
 }
 
-/* Active State - Retain Black Text */
 nav ul li a.active {
-    color: #333333; /* Keep black text */
-    background-color: #A6D8FF; /* Light blue background */
-    border-color: #A6D8FF; /* Light blue border for active button */
+    color: #333333;
+    background-color: #A6D8FF;
+    border-color: #A6D8FF;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #BEE3F8, #D1E9FF); /* Baby Blue Gradient */
-    color: #333333; /* Black text */
+    background: linear-gradient(135deg, #BEE3F8, #D1E9FF);
+    color: #333333;
     padding: 100px 20px;
     text-align: center;
     background-image: url('Blog-2.jpg');
@@ -109,7 +96,7 @@ nav ul li a.active {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.4); /* Light white overlay */
+    background-color: rgba(255, 255, 255, 0.4);
     filter: blur(6px);
     z-index: -1;
 }
@@ -127,8 +114,8 @@ nav ul li a.active {
 }
 
 .hero .cta-button {
-    background-color: #A6D8FF; /* Light blue */
-    color: #333333; /* Black text */
+    background-color: #A6D8FF;
+    color: #333333;
     padding: 18px 40px;
     font-size: 1.4rem;
     border-radius: 50px;
@@ -138,73 +125,23 @@ nav ul li a.active {
 }
 
 .hero .cta-button:hover {
-    background-color: #B8E2F4; /* Lighter blue on hover */
+    background-color: #B8E2F4;
     transform: translateY(-5px);
-}
-
-/* Pricing Table Section */
-.pricing-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 30px 0;
-    background-color: #FFFFFF; /* White background */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.pricing-table th,
-.pricing-table td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #A6D8FF; /* Light blue border */
-}
-
-.pricing-table th {
-    background-color: #A6D8FF; /* Light blue */
-    color: #FFFFFF; /* White text */
-}
-
-.pricing-table td {
-    font-size: 1.1rem;
-    color: #333333; /* Black text */
-}
-
-.pricing-table tr:hover {
-    background-color: #EAF6FF; /* Light Blue hover effect */
-    color: #333333; /* Black text */
-}
-
-.pricing-table .cta-button {
-    background-color: #A6D8FF; /* Light blue */
-    color: #333333; /* Black text */
-    font-weight: bold;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-.pricing-table .cta-button:hover {
-    background-color: #B8E2F4; /* Lighter blue on hover */
 }
 
 /* Service Cards Section */
 #services {
     padding: 50px 0;
-    background-color: #FFFFFF; /* White background */
+    background-color: #FFFFFF;
     text-align: center;
 }
 
 #services h2 {
     font-size: 3rem;
     margin-bottom: 40px;
-    color: #A6D8FF; /* Light Blue */
-    text-transform: none; /* Normal case */
-    font-weight: 600;
+    color: #A6D8FF;
 }
 
-/* Service Cards Layout */
 .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -213,8 +150,8 @@ nav ul li a.active {
 }
 
 .service-card {
-    background-color: #F1F1F1; /* Smoke White background */
-    border: 1px solid #A6D8FF; /* Light blue border */
+    background-color: #F1F1F1;
+    border: 1px solid #A6D8FF;
     border-radius: 12px;
     padding: 20px 40px;
     text-align: center;
@@ -222,14 +159,13 @@ nav ul li a.active {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
-    text-transform: none; /* Normal case text */
     font-size: 1.2rem;
-    color: #333333; /* Black text */
+    color: #333333;
 }
 
 .service-card:hover {
-    background-color: #A6D8FF; /* Light blue on hover */
-    color: #FFFFFF; /* White text */
+    background-color: #A6D8FF;
+    color: #FFFFFF;
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
@@ -237,19 +173,19 @@ nav ul li a.active {
 .service-card h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #333333; /* Black title */
+    color: #333333;
     font-weight: 700;
 }
 
 .service-card p {
     font-size: 1.1rem;
-    color: #333333; /* Black text */
+    color: #333333;
     margin-bottom: 20px;
 }
 
 /* Contact Section */
 #contact {
-    background-color: #F1F1F1; /* Smoke White */
+    background-color: #F1F1F1;
     padding: 60px 20px;
     font-family: 'Roboto', Arial, sans-serif;
 }
@@ -257,63 +193,80 @@ nav ul li a.active {
 #contact h2 {
     font-size: 3rem;
     text-align: center;
-    color: #A6D8FF; /* Light blue */
+    color: #A6D8FF;
     margin-bottom: 40px;
-    text-transform: none; /* Normal case */
 }
 
 form {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #FFFFFF; /* White background */
+    background-color: #FFFFFF;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #A6D8FF; /* Light blue border */
-    border-radius: 8px;
-    font-size: 1.1rem;
-    color: #333333;
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .cta-button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+
+    #services h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-card {
+        padding: 15px 20px;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+    }
 }
 
-form input[type="submit"] {
-    background-color: #A6D8FF; /* Light blue button */
-    color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border-radius: 25px;
-    padding: 12px 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
 
-form input[type="submit"]:hover {
-    background-color: #B8E2F4; /* Lighter blue on hover */
-}
+    .hero p {
+        font-size: 1rem;
+    }
 
-.contact-button {
-    display: inline-block; /* Ensure it's displayed properly */
-    background-color: #007BFF; /* Blue background */
-    color: #fff; /* White text */
-    padding: 12px 25px; /* Padding to make the button bigger */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1.1rem; /* Font size */
-    font-weight: bold; /* Make the text bold */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove any default underline */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
-}
+    .hero .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 
-.contact-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight upward movement on hover */
+    #services h2 {
+        font-size: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
 }
 
